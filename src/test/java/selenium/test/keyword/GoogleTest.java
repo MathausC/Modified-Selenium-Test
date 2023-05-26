@@ -21,14 +21,14 @@ public class GoogleTest {
     List<String> languageList;
     @BeforeEach
     void setUp() {
-        RemoteWebDriver.addLanguagePropertie("src/test/resources/portuguese-languange.properties");
-        RemoteWebDriver.addLanguagePropertie("src/test/resources/english-languange.properties");
-        //RemoteWebDriver.addLanguagePropertie("src/test/resources/hebreu-languange.properties");
-        RemoteWebDriver.addLanguagePropertie("src/test/resources/italian-languange.properties");
-        //RemoteWebDriver.addLanguagePropertie("src/test/resources/russian-languange.properties");
-        RemoteWebDriver.addLanguagePropertie("src/test/resources/spanish-languange.properties");
-        //RemoteWebDriver.addLanguagePropertie("src/test/resources/arabic-languange.properties");
-        languageList = new ArrayList<String>();
+        RemoteWebDriver.addLanguagePropertie("src/test/resources/portuguese-language.properties");
+        RemoteWebDriver.addLanguagePropertie("src/test/resources/english-language.properties");
+        RemoteWebDriver.addLanguagePropertie("src/test/resources/italian-language.properties");
+        RemoteWebDriver.addLanguagePropertie("src/test/resources/spanish-language.properties");
+        //RemoteWebDriver.addLanguagePropertie("src/test/resources/russian-language.properties");
+        //RemoteWebDriver.addLanguagePropertie("src/test/resources/hebrew-language.properties");
+        //RemoteWebDriver.addLanguagePropertie("src/test/resources/arabic-language.properties");
+        languageList = new ArrayList<>();
         languageList.add("pt");
         languageList.add("es");
         languageList.add("en");
