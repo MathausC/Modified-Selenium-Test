@@ -8,6 +8,14 @@ Para carregar uma propriedade no webdriber se utiliza o metodo estatico RemoteWe
 
 `RemoteWebDriver.addLanguagePropertie("path/to/language.properties")`
 
+# Configurar ambiente
+
+Para configurar o ambiente 'e necessario executar `mvn install` para que todas as dependencias sejam instaladas.
+
+Para instalar a versao modificada do Selenium 'e necessario baixar os jars, codigo fontes e arquivos de documentacao pelo por este [Google Drive Link](https://drive.google.com/drive/folders/1i9sfR1VVaHCipVhRfWvY9zbMaoeg5_IB?usp=sharing) e importalo para o projeto.
+
+**Nota**: 'E necessario importar todos os arquicos presentes no diretorio baixado.
+
 # Atividades a serem implementadas
 
 ## 1. Teste do Google.com
