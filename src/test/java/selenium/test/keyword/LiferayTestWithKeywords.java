@@ -15,7 +15,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class LiferayTest {
+import java.util.List;
+
+public class LiferayTestWithKeywords {
 
     WebDriver webDriver;
     List<String> languageList;
