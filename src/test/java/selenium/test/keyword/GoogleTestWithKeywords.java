@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GoogleTest {
+public class GoogleTestWithKeywords {
 
     WebDriver webDriver;
     List<String> languageList;
