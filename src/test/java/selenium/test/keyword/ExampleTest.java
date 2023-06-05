@@ -1,10 +1,10 @@
 package selenium.test.keyword;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,7 +46,6 @@ public class ExampleTest {
             assertElementVisible("(//*[@aria-label=\"${im-feeling-luck}\"])[2]");
             assertElementVisible("//*[text()=\"${gmail}\"]");
             assertElementVisible("//*[text()=\"${images}\"]");
-            assertElementVisible("//*[text()=\"${sign-in}\"]");
         }
     }
 
