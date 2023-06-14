@@ -37,21 +37,37 @@ public class GoogleTest {
 
     @Test
     void TestEnglishGooglePage() {
-
+        webDriver.get("https://www.google.com/?hl=en");
+        webDriver.findElement(By.xpath("//*[contains(@value,'Google Search')]"));
+        webDriver.findElement(By.xpath("//*[contains(@value,\"I'm Feeling Luck\")]"));
+        webDriver.findElement(By.xpath("//*[text()='Gmail']"));
+        webDriver.findElement(By.xpath("//*[text()='Images']"));
     }
 
     @Test
     void TestPortugueseGooglePage() {
-
+        webDriver.get("https://www.google.com/?hl=pt");
+        webDriver.findElement(By.xpath("//*[contains(@value,'Pesquisa Google')]"));
+        webDriver.findElement(By.xpath("//*[contains(@value,'Estou com sorte')]"));
+        webDriver.findElement(By.xpath("//*[text()='Gmail']"));
+        webDriver.findElement(By.xpath("//*[text()='Imagens']"));
     }
 
     @Test
     void TestSpanishGooglePage() {
-        
+        webDriver.get("https://www.google.com/?hl=es");
+        webDriver.findElement(By.xpath("//*[contains(@value,'Buscar con Google')]"));
+        webDriver.findElement(By.xpath("//*[contains(@value,'Voy a tener suerte')]"));
+        webDriver.findElement(By.xpath("//*[text()='Gmail']"));
+        webDriver.findElement(By.xpath("//*[text()='Imágenes']"));
     }
 
     @Test
     void TestItalianGooglePage() {
-        
+        webDriver.get("https://www.google.com/?hl=it");
+        webDriver.findElement(By.xpath("//*[contains(@value,'Cerca con Google')]"));
+        webDriver.findElement(By.xpath("//*[contains(@value,'Mi sento fortunato')]"));
+        webDriver.findElement(By.xpath("//*[text()='Gmail']"));
+        webDriver.findElement(By.xpath("//*[text()='Immagini']"));
     }
 }
