@@ -1,75 +1,75 @@
-# Utilizando o novo metodo
+# Utilizando o novo método
 
-O metodo By.keyword() recebe string como parametro especificamente XPaths. O diferencial 'e que para se for encontrado na string o padrao *${keyword-present}* o metodo substituira em tempo de execucao essa substring pelo valor correspondente presente em um arquivo de propriedade previamente carregado.
+O método By.keyword() recebe string como parâmetro especificamente XPaths. O diferencial é caso seja encontrado na string o padrão *${keyword-present}*, o método substituirá em tempo de execução essa substring pelo valor correspondente presente em um arquivo de propriedade previamente carregado.
 
 `By.keyword("//*[text()='${keyword-present}']");`
 
-Para carregar uma propriedade no webdriber se utiliza o metodo estatico RemoteWebDriver.addLanguagePropertie() passando como parametro a string com o caminho para o arquivo de propriedade.
+Para carregar uma propriedade no webdriber é utilizado o método estático RemoteWebDriver.addLanguagePropertie() passando como parâmetro a string com o caminho para o arquivo de propriedade.
 
 `RemoteWebDriver.addLanguagePropertie("path/to/language.properties")`
 
 # Configurar ambiente
 
-Para configurar o ambiente 'e necessario executar `mvn install` para que todas as dependencias sejam instaladas.
+Para configurar o ambiente é necessário executar `mvn install` para que todas as dependencias sejam instaladas.
 
-Para instalar a versao modificada do Selenium 'e necessario baixar os jars, codigo fontes e arquivos de documentacao pelo por este [Google Drive Link](https://drive.google.com/drive/folders/1i9sfR1VVaHCipVhRfWvY9zbMaoeg5_IB?usp=sharing) e importalo para o projeto.
+Para instalar a versão modificada do Selenium é necessário baixar os jars, códigos fonte e arquivos de documentação pelo link [Google Drive Link](https://drive.google.com/drive/folders/1i9sfR1VVaHCipVhRfWvY9zbMaoeg5_IB?usp=sharing) e importa-lo para o projeto.
 
-**Nota**: 'E necessario importar todos os arquicos presentes no diretorio baixado.
+**Nota**: É necessário importar todos os arquivos presentes no diretório baixado.
 
 # Atividades a serem implementadas
 
 ## 1. Teste do Google.com
 
-### Utilizando os metodos conhecidos do Selenium
+### Utilizando os métodos conhecidos do Selenium
 
-Crie testes para as linguas:
+Crie testes para as línguas:
 
-* Ingles (https://www.google.com/?hl=en)
-* Portugues (https://www.google.com/?hl=pt)
+* Inglês (https://www.google.com/?hl=en)
+* Português (https://www.google.com/?hl=pt)
 * Espanhol (https://www.google.com/?hl=es)
 * Italiano (https://www.google.com/?hl=it)
 
-Prerequisitos do teste
+Pré-requisitos do teste
 
-* Ja deve existir instancia de opcoes para o navegador
-* Ja deve existir instancia de do webdriver para o navegador.
+* Já deve existir instância de opções para o navegador
+* Já deve existir instância do webdriver para o navegador.
 
 Passos do teste
 
-1. Va para a pagina do https://www.google.com/?hl=en (Para a pagina em ingles)
-2. Verifique que o botao Google Search esta visivel
-3. Verifique que o botao I'm Felling Lucky esta presente
-4. Verifique que a ancora Gmail esta presente
-5. Verifique que a ancora Imagens esta presente
+1. Vá para a página do https://www.google.com/?hl=en (Para a página em inglês)
+2. Verifique que o botão Google Search está visivel
+3. Verifique que o botão I'm Felling Lucky está presente
+4. Verifique que a âncora Gmail está presente
+5. Verifique que a âncora Imagens está presente
 
-Apos o cada teste
+Após cada teste
 
 * Finalize o webdriver.
 
 ### Utilizando novo metodo By.keyword
 
-Crie um teste para as linguas:
+Crie um teste para as línguas:
 
-* Ingles (https://www.google.com/?hl=en)
-* Portugues (https://www.google.com/?hl=pt)
+* Inglês (https://www.google.com/?hl=en)
+* Português (https://www.google.com/?hl=pt)
 * Espanhol (https://www.google.com/?hl=es)
 * Italiano (https://www.google.com/?hl=it)
 
-Prerequisitos do teste
+Pré-requisitos do teste
 
-* Ja deve estar carregado no webdrive as propriedades de linguas
-* Ja deve existir instancia de opcoes para o navegador
-* Ja deve existir instancia de do webdriver para o navegador
+* Já deve estar carregado no webdrive as propriedades de línguas
+* Já deve existir instância de opções para o navegador
+* Já deve existir instância do webdriver para o navegador
 
 Passos do teste
 
-1. Va para a pagina do https://www.google.com/?hl=en (Para a pagina em ingles)
-2. Verifique que o botao Google Search esta visivel
-3. Verifique que o botao I'm Felling Lucky esta presente
-4. Verifique que a ancora Gmail esta presente
-5. Verifique que a ancora Imagens esta presente
+1. Vá para a página do https://www.google.com/?hl=en (Para a página em inglês)
+2. Verifique que o botão Google Search esta vísivel
+3. Verifique que o botão I'm Felling Lucky esta presente
+4. Verifique que a âncora Gmail esta presente
+5. Verifique que a âncora Imagens esta presente
 
-Apos o teste
+Após o teste
 
 * Finalize o webdriver
 
@@ -77,63 +77,63 @@ Apos o teste
 
 ### Utilizando os metodos conhecidos do Selenium
 
-Crie testes para as linguas:
+Crie testes para as línguas:
 
 Site: https://www.liferay.com
 
-* Ingles
-* Portugues
+* Inglês
+* Português
 * Espanhol
 * Italiano
-* Frances
+* Francês
 
-Prerequisitos do teste
+Pré-requisitos do teste
 
-* Ja deve existir instancia de opcoes para o navegador
-* Ja deve existir instancia de do webdriver para o navegador.
+* Já deve existir instância de opções para o navegador
+* Já deve existir instância do webdriver para o navegador.
 
 Passos do teste
 
-1. Va para a pagina do https://www.liferay.com
-2. Click na selecao de linguas no topo da pagina
+1. Vá para a página do https://www.liferay.com
+2. Click na seleção de línguas no topo da página
 3. Selecione a lingua desejada para o teste
-4. Verifique se os textos presentes na pagina estao visiveis.
+4. Verifique se os textos presentes na página estão visíveis.
 
-Apos o cada teste
+Após cada teste
 
 1. Finalize o webdriver.
 
-### Utilizando novo metodo By.keyword
+### Utilizando novo método By.keyword
 
-Crie um teste para as linguas:
+Crie um teste para as línguas:
 
 Site: https://www.liferay.com
 
-* Ingles
-* Portugues
+* Inglês
+* Português
 * Espanhol
 * Italiano
-* Frances
+* Francês
 
-Prerequisitos do teste
+Pré-requisitos do teste
 
-* Ja deve existir instancia de opcoes para o navegador
-* Ja deve existir instancia de do webdriver para o navegador.
+* Já deve existir instância de opções para o navegador
+* Já deve existir instância do webdriver para o navegador.
 
 Passos do teste
 
-1. Va para a pagina do https://www.liferay.com
-2. Click na selecao de linguas no topo da pagina
-3. Selecione a lingua desejada para o teste
-4. Verifique se os textos presentes na pagina estao visiveis.
-5. Repita os passos 2 a 4 ate que todas as linguas tenham sido verificadas.
+1. Vá para a página do https://www.liferay.com
+2. Click na seleção de línguas no topo da página
+3. Selecione a língua desejada para o teste
+4. Verifique se os textos presentes na página estão visíveis.
+5. Repita os passos 2 a 4 ate que todas as línguas tenham sido verificadas.
 
-Apos o cada teste
+Após cada teste
 
 1. Finalize o webdriver.
 
 ## Formulario
 
-Ao final 'e necessario preencher um formulario com algumas perguntas sobre sua experiencia com a ferramenta:
+Ao final é necessário preencher o seguinte formulário com algumas perguntas sobre sua experiência com a ferramenta:
 
 Link: https://forms.gle/hJ7LrecciwALV95m8
